@@ -1,0 +1,38 @@
+Tarea 01 : prog3_unit1_tarea_introductoria_v2022_1_template
+https://github.com/rrivas-utec/prog3_unit1_tarea_introductoria_v2022_1_template
+
+Tarea 02 : prog3_unit2_templates_v2022_1_template
+https://github.com/rrivas-utec/prog3_unit2_templates_v2022_1_template
+Github: Ejercicios desarrollados en clase de templates 
+https://github.com/rrivas-utec/prog3_templates_TEO1_2022_1
+https://github.com/rrivas-utec/prog3_libreria_estandar_TEO_2022_2
+
+Tarea 03 : prog3_unit2_standar_library_v2022_1_template
+https://github.com/rrivas-utec/prog3_unit2_standar_library_v2022_1_template
+Github: Libreria Estandar - Iteradores y Algoritmos - Actualizado 4 de Octubre 
+https://github.com/rrivas-utec/prog3_libreria_estandar_2022_2
+Replit : prog3_libreria_estandar_contenedores_lab_102_2022_1
+https://replit.com/@RubenRivasMedina/prog3libreriaestandarcontenedoreslab10220221#src/main.cpp
+
+Tarea 04 : Complejidad Algoritmica
+https://github.com/rrivas-utec/prog3_complejidad_algoritmica_v2022_1_template
+
+Tarea 05 : prog3_programacion_concurrente_v2022_1_template
+https://github.com/rrivas-utec/prog3_programacion_concurrente_v2022_1_template
+Ejercicios de Programacion Concurrente
+https://github.com/rrivas-utec/prog3_programacion_concurrente_2022_2
+https://github.com/rrivas-utec/prog3_modelos_concurrentes_2022_2
+
+Tarea 06 : Estructuras Basicas Adaptadores
+https://github.com/rrivas-utec/prog3_unit6_adaptadores_v2021_2_template/blob/master/README.md
+
+Ejemplos de Adaptadores: 
+https://github.com/rrivas-utec/prog3_adaptadores_2022_2/blob/master/main.cpp
+
+
+Lab: Codes de todas las semanas
+https://github.com/jchavezautec/cs2013
+
+
+
+
