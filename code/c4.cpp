@@ -216,18 +216,20 @@ T maxi(T a, T b)
 template<typename X=int>      // * default template parameter
 using ilist = std::initializer_list<X>;
 
+void ejemplo_template_arguments();
+
 int main()
 {
     // ejemplo_casting();
     // ejemplo_inlist();
 
-    ilist<double> numeros {1, 2, 3, 4, 5};
+    // ilist<double> numeros {1, 2, 3, 4, 5};
     
-    ilist<> enteros {10, 9, 8, 7};
-    ilist<>::iterator beg = enteros.begin();
-    for(; beg != enteros.end(); beg++)      // start, stop, step
-        cout<<*beg<<" ";
-    
+    // ilist<> enteros {10, 9, 8, 7};
+    // ilist<>::iterator beg = enteros.begin();
+    // for(; beg != enteros.end(); beg++)      // start, stop, step
+    //     cout<<*beg<<" ";
+    ejemplo_template_arguments();
     return 0;
 }
 
@@ -272,7 +274,10 @@ void ejemplo_template_arguments()
     auto deque_int = get_container<std::deque, int>();
     auto fwdlist_double = get_container<std::forward_list, double>();
 
+    // decltype(get_container<std::list, string>()) == std::list<string>
     decltype(get_container<std::list, string>()) list_str {"Merry", "Christmas", "&", "Happy", "New", "Year", to_string(2023)};
+    // auto list_str = get_container<std::list, string>();
+    // list_str = {"Merry", "Christmas", "&", "Happy", "New", "Year", to_string(2023)};
     for (const string& el : list_str)
         cout<<el<<" ";
     cout<<endl;
