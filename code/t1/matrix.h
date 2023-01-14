@@ -1,46 +1,66 @@
 #pragma once
 #include <iostream>
+#include "number.h"
 using namespace std;
 
 namespace utec{
 
+    
     class matrix_t
     {
     private:
         int rows;
         int cols;
-        int** mat = nullptr;
+        number_t*** mat;
+        friend ostream &operator<<(ostream &os,  matrix_t& m);
+
+
     public:
-    
+
+        matrix_t() = default;
+
         matrix_t(const int _rows, const int _cols) : rows(_rows), cols(_cols){
-            mat = new int*[_rows];
+            mat = new number_t**[_rows];
             for(int i = 0; i < _rows; i++){
-                mat[i] = new int[_cols];
-                for(int j = 0; j < _cols; j++){
-                    mat[i][j] = 0;
-                }
+                mat[i] = new number_t*[_cols];
             }
         }
-
+        
         int row_size(){return rows;}
         int col_size(){return cols;}
 
+
+        number_t*& operator()(int i, int j){
+            
+            return mat[i][j]; // *&mat[i][j];
+            
+        }
+        
         ~matrix_t(){
-        for(int i=0; i< rows; i++){
-                delete [] mat[i];
-            delete [] mat;
-            mat = nullptr;
-            break;}
+            for(int i=0; i< rows; i++){
+                    delete [] mat[i];
+                delete [] mat;
+                mat = nullptr;
+                break;}
+            }
+
+        };
+        
+        ostream &operator<<(ostream &os, number_t &n){
+            n.out();
+            return os;
         }
 
-    friend ostream &operator<<(ostream &os, const matrix_t &m) {
-        for (int i=0; i < m.rows; ++i) {
-            for (int j=0; j < m.cols; ++j) {
-                os << m.mat[i][j] << " " ;
-            }
-            os << '\n';
+        ostream &operator<<(ostream &os, matrix_t &m) {
+            for (int i=0; i < m.rows; ++i){
+                for (int j=0; j < m.cols; ++j) {
+                        os << *m.mat[i][j] << " " ;
+                    }
+                    os << '\n';
+                }
+                return os;  
         }
-        return os;
-        }
-    };
+
+        
+
 }
