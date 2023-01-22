@@ -190,13 +190,15 @@ template<typename... pack, typename first>
 auto sum(first F, pack... P)
 {
     // * USE RECURSION
+    auto res = F + sum(P...);
+    return res;
     // printf("  %s\n", __PRETTY_FUNCTION__);
     // cout<<" "<<sizeof...(P)<<"\n";       // tama;o del pack de parametros
     // auto res = F + sum(P...);
     // return res;       // P... significa desempacar los parametros
 
     // * FOLD EXPRESSION
-    return (P + ...);
+    // return (P + ...);
 }
 
 
