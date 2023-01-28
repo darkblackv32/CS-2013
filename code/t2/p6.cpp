@@ -1,6 +1,5 @@
 #include "p6.h"
 
-
 int main(){
 
     char var1{};
