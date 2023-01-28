@@ -10,5 +10,7 @@ c5:
 	g++ -std=c++17 c5.cpp c5.h && ./a.out && rm ./a.out
 c6:
 	g++ -std=c++17 c6.cpp && ./a.out && rm ./a.out
+c7:
+	g++ -std=c++17 c7.cpp && ./a.out && rm ./a.out
 clean:
 	rm *.out *.h.gch
