@@ -14,5 +14,7 @@ c7:
 	g++ -std=c++17 c7.cpp && ./a.out && rm ./a.out
 c8:
 	g++ -std=c++17 c8.cpp && ./a.out && rm ./a.out
+c9:
+	g++ -std=c++17 c9.cpp && ./a.out && rm ./a.out
 clean:
 	find . -name "*.h.gch" | xargs rm
