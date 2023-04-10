@@ -20,5 +20,7 @@ c10:
 	g++ -std=c++17 c10.cpp && ./a.out && rm ./a.out
 c11:
 	g++ -std=c++20 c11.cpp && ./a.out && rm ./a.out
+c12:
+	g++ -std=c++20 c12.cpp && ./a.out && rm ./a.out
 clean:
 	find . -name "*.h.gch" | xargs rm
