@@ -6,6 +6,10 @@
 using namespace std;
 
 bool no_prime(int x){
+    if(x == 0 || x == 1){
+        return true;
+    }
+
     for(int i = 2; i < x; i++){
         if(x%i == 0){
             return true;
@@ -13,6 +17,7 @@ bool no_prime(int x){
     }
     return false;
 }
+
 int main(){
 
     srand((unsigned) time(NULL));
